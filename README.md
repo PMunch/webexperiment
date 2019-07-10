@@ -11,7 +11,6 @@ To try it run:
 `nim c -r test`
 
 Stuff that should be added:
-- Compiling the controllers/views with `-d:release` when `test` was compiled
-with it.
+- Figure out how to use nimRtl so the garbage collector won't trip on itself or
+do weird things (or prove that this doesn't actually happen)
 - Don't show nim compiler output in release build
-- Support routing and argument passing

@@ -5,8 +5,9 @@ const
   view = getView(currentSourcePath())
 var name: string
 
-proc init* {.exportc, dynlib.} =
+proc init*: string {.exportc, dynlib.} =
   name = "Peter Parker"
+  result = ""
 
 proc createPage*(request: Request): string {.exportc, dynlib.} =
   tmpls(view)
